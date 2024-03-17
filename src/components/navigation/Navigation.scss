@@ -1,0 +1,42 @@
+.nav-wrapper {
+    display: flex;
+    min-height: 80px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    // position: fixed;
+    // width: 100%;
+}
+
+.nav-body {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+
+        li {
+            font-size: 16px;
+            color: #000;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        li:hover {
+            color: #008000;
+            font-weight: 600;
+            transition: 0.5s;
+        }
+    }
+
+    img {
+        height: 50px;
+        width: 150px;
+    }
+}

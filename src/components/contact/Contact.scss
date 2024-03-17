@@ -1,0 +1,19 @@
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.contact-body {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 96px 0px 96px;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-body {
+        width: 80%;
+    }
+}
