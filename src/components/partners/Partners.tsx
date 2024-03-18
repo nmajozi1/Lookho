@@ -1,13 +1,19 @@
+import { Tooltip } from '@mui/material';
 import './Partners.scss';
 
 const Partners = () => {
-  const partnerImages = ['/partners/exco.jpeg', '/partners/sfw.png', '/partners/strider.jpeg'];
+  const partnerImages = [{url: '/partners/exco.jpeg', name: 'ex.co'}, {url: '/partners/sfw.png', name: 'Safe Workplace'}, {url: '/partners/strider.jpeg', name: 'Strider'}];
   return (
     <div className='partners-wrapper'>
         <div className='parners-body'>
-            {/* <span className='partners-header'><img alt='header' src='handshake.svg' style={{ height: 100, width: 100 }} /></span> */}
             <div className='partners-image-container'>
-                {partnerImages.map((image: string) => (<img alt='/partners/exco.jpeg' src={image} />))}
+                {partnerImages.map((image: any) => {
+                  return (
+                    <Tooltip title={image.name} placement='top' >
+                      <img alt='/partners/exco.jpeg' src={image.url} />
+                    </Tooltip>
+                  )
+                })}
             </div>
         </div>
     </div>
