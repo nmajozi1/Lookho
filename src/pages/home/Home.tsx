@@ -1,4 +1,5 @@
-import Contact from '../../components/contact/Contact';
+// import Contact from '../../components/contact/Contact';
+import Footer from '../../components/footer/Footer';
 import Navigation from '../../components/navigation/Navigation';
 import Partners from '../../components/partners/Partners';
 import Reasons from '../../components/reasons/Reasons';
@@ -14,7 +15,8 @@ const Home = () => {
       <Stack />
       <Reasons />
       <Partners />
-      <Contact />
+      {/* <Contact /> */}
+      <Footer />
     </div>
   )
 }
