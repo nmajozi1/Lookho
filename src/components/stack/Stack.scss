@@ -18,16 +18,13 @@
     margin: 24px 0px 88px;
     gap: 96px;
     flex-wrap: wrap;
-    justify-content: center;
-    img:hover {
-        cursor: pointer;
-    }
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 1000px) {
     .stack-body {
-        width: 100%;
         justify-content: center;
+        width: 90%;
         margin: 24px 0;
         gap: 48
     }

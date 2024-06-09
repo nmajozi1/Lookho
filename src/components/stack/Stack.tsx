@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { stackData } from '../../utils/utils';
 import './Stack.scss';
-import { Tooltip } from '@mui/material';
+import Icon from '../icon/Icon';
 
 const Stack = () => {
   const [stackInfo, setStackInfo] = useState<any[]>([]);
@@ -13,13 +13,11 @@ const Stack = () => {
 
   return (
     <div className='stack-wrapper'>
-        <div className='stack-body'>
-            {stackInfo.map((stack) => (
-                <Tooltip title={stack.name} placement='top'>
-                  <img style={{ width: 50, height: 50 }} alt='stack'src={stack.image} />
-                </Tooltip>
-            ))}
-        </div>
+      <div className='stack-body'>
+          {stackInfo.map((stack, index) => (
+            <Icon key={index} image={stack.image} tooltip={stack.name} />
+          ))}
+      </div>
     </div>
   )
 }

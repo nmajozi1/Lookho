@@ -7,11 +7,7 @@ const Services = () => {
     <div className='services-wrapper'>
         <div className='services-body'>
             {images.map((service: string, index: number) => (
-              <CardImage service={service} />
-            // <img key={index} alt='serv' src={service} />
-            // <div style={{ maxWidth: 300, maxHeight: 450, background: 'red', borderRadius: 16 }}>
-            //   <img className='images' key={index} alt='serv' src={service} />
-            // </div>
+              <CardImage key={index} service={service} />
             ))}
         </div>
     </div>
