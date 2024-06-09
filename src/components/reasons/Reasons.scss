@@ -12,7 +12,6 @@
 	display: flex;
 	flex-direction: column;
 	width: 80%;
-	// background-color: #f8f9fa;
 	gap: 24px;
 	color: #2d2e2e;
 	font-family: var(--zds-typography-heading, "Degular", Helvetica, arial, sans-serif);
@@ -21,14 +20,11 @@
 .reasons-title {
   font-size: 32px;
   font-weight: 500;
-  // color: #1f1f1f;
-  // font-family: sans-serif;
 }
 
 .reasons-card-container {
 	display: flex;
 	justify-content: space-between;
-	// justify-content: center;
 	gap: 24px;
 	flex-wrap: wrap;
 	margin-top: 80px;
