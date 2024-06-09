@@ -6,7 +6,6 @@
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     max-height: 500px;
-    min-height: 300px;
     gap: 24px;
 }
 
@@ -28,7 +27,7 @@
 }
 
 .card-new-body-container {
-    margin: 8px 24px 0px 24px;
+    margin: 8px 24px 48px 24px;
     border-top: 2px solid maroon;
     padding-top: 32px;
 }
@@ -36,3 +35,9 @@
 .card-new-text-body {
     margin-top: 24px;
 }
+
+@media screen and (min-width: 1500px) {
+    .card-new-wrapper {
+        max-width: 450px;
+    }
+  }

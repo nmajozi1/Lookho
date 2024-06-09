@@ -1,21 +1,21 @@
 .reasons-wrapper {
-    display: flex;
-    background-color: #f8f9fa;
-    justify-content: center;
-    background-image: url("../../../public/background_two.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+	display: flex;
+	background-color: #f8f9fa;
+	justify-content: center;
+	background-image: url("../../../public/background_two.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .reasons-body {
-    margin: 32px 0px 24px;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    // background-color: #f8f9fa;
-    gap: 24px;
-    color: #2d2e2e;
-    font-family: var(--zds-typography-heading, "Degular", Helvetica, arial, sans-serif);
+	margin: 32px 0px 24px;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	// background-color: #f8f9fa;
+	gap: 24px;
+	color: #2d2e2e;
+	font-family: var(--zds-typography-heading, "Degular", Helvetica, arial, sans-serif);
 }
 
 .reasons-title {
@@ -26,21 +26,27 @@
 }
 
 .reasons-card-container {
-    display: flex;
-    justify-content: center;
-    // justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
-    margin-top: 80px;
-    margin-bottom: 80px;
+	display: flex;
+	justify-content: space-between;
+	// justify-content: center;
+	gap: 24px;
+	flex-wrap: wrap;
+	margin-top: 80px;
+	margin-bottom: 80px;
 }
 
 @media screen and (max-width: 1000px) {
-    .reasons-body {
-        width: 100%;
-    }
+	.reasons-body {
+			width: 100%;
+	}
 
-    .reasons-card-container {
-        justify-content: center;
-    }
+	.reasons-card-container {
+			justify-content: center;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+  .reasons-card-container {
+    gap: 48px;
+  }
 }
