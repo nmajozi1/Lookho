@@ -3,8 +3,8 @@ import './Partners.scss';
 
 const Partners = () => {
   const partnerImages = [
-    {url: '/partners/exco.jpeg', name: 'ex.co'}, 
-    {url: '/partners/sfw.png', name: 'Safe Workplace'}, 
+    // {url: '/partners/exco.jpeg', name: 'ex.co'}, 
+    // {url: '/partners/sfw.png', name: 'Safe Workplace'}, 
     {url: '/partners/strider.jpeg', name: 'Strider'},
     {url: '/xalisa.svg', name: 'Xalisa'},
   ];
