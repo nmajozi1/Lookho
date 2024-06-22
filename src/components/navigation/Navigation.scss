@@ -40,3 +40,9 @@
         width: 150px;
     }
 }
+
+@media screen and (max-width: 1000px) {
+	.nav-body {
+		justify-content: center;
+	}
+}
